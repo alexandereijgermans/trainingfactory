@@ -62,8 +62,18 @@ a{
 .menupicborder{
     border: 1px solid black;
     margin: auto;
+    margin-bottom: 50px;
     width: 730px;
 }
 
+/*contact*/
+.contact {
+    margin-left: 50px;
+}
 
+/*gedragsregels*/
+.gedragsregels {
+    margin-left: 50px;
+    margin-right: 50px;
+}
 

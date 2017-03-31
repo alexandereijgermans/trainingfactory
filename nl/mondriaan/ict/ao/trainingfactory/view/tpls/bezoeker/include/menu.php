@@ -10,10 +10,10 @@
             <a href="">Lid Worden</a>
         </li>
         <li>
-            <a href="">Gedragsregels</a>
+            <a href="?control=bezoeker&action=gedragsregels">Gedragsregels</a>
         </li>
         <li>
-            <a href="">Locatie & Contact</a>
+            <a href="?control=bezoeker&action=contact">Locatie & Contact</a>
         </li>
     </ul>
 </nav>
