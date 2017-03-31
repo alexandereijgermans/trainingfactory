@@ -6,7 +6,7 @@
 
 class BezoekerController extends \ao\php\framework\controls\AbstractController
 {   
-    public function inloggenAction()
+    public function defaultAction()
     {
         if($this->model->isPostLeeg())
         {
@@ -19,13 +19,18 @@ class BezoekerController extends \ao\php\framework\controls\AbstractController
             {
                 case REQUEST_SUCCESS:
                      $this->view->set("boodschap","Welkom op de beheers applicatie. Veel werkplezier");
-                     $recht = $this->model->getGebruiker()->getRecht();
+                     $recht = $this->model->getGebruiker()->getRole();
                      $this->forward("default", $recht);
                      break;
                 case REQUEST_FAILURE_DATA_INVALID:
                      $this->view->set("boodschap","Gegevens kloppen niet. Probeer opnieuw."); 
+
                      break;
                 case REQUEST_FAILURE_DATA_INCOMPLETE:
+                    $this->forward("default", "bezoeker");
+                     break;
+                case REQUEST_FAILURE_DATA_INCOMPLETE:
+                    $this->forward("default", "bezoeker");
                      $this->view->set("boodschap","niet alle gegevens ingevuld");
                      break;
             }
@@ -34,13 +39,5 @@ class BezoekerController extends \ao\php\framework\controls\AbstractController
 //        $this->view->set("afdelingen",$afdelingen);
 //        $directeur = $this->model->getDirecteur();
 //        $this->view->set("directeur",$directeur);
-    }
-    
-    public function defaultAction()
-    {
-//       $afdelingen=$this->model->getAfdelingen();
-//       $this->view->set("afdelingen",$afdelingen);
-//       $directeur = $this->model->getDirecteur();
-//       $this->view->set("directeur",$directeur);
     }
 }

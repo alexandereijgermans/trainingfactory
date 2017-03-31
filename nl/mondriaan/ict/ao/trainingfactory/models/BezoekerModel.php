@@ -17,7 +17,7 @@ class BezoekerModel extends \ao\php\framework\models\AbstractModel
              $sth->execute();
              
              $result = $sth->fetchAll(\PDO::FETCH_CLASS,__NAMESPACE__.'\db\Person');
-             
+
              if(count($result) === 1)
              {   
                  $this->startSession();   

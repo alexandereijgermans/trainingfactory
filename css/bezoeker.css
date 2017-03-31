@@ -22,3 +22,20 @@ a{
     margin: auto;
     width: 50%;
 }
+
+figure{
+    width: 300px;
+    float: left;
+}
+
+.inlogFrom {
+    width: 200px;
+    float: right;
+    margin-top: 10px;
+}
+
+.btn {
+    color: red;
+    margin-right: 10px;
+}
+
