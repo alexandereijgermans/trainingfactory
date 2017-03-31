@@ -9,16 +9,8 @@
     <body>
         <header>
             <figure>
-<<<<<<< HEAD
-            
-            </figure>
-            <div>
-                
-            </div>
-        </header>
-        <section>
-=======
                 <img src="img/logo.png" alt="logo">
+                <h1> Training Centrum <br> Den Haag</h1>
             </figure>
             <form class="inlogFrom" method="post" autocomplete="off">
                     <table>    
@@ -40,6 +32,5 @@
                     </table>
                 </form>
         </header>
-        <section>
-            kaas
->>>>>>> 6af78b0b79acedc06687a64da3eb0921e96dc382
+        <div class="clearfix"></div>
+        <hr>

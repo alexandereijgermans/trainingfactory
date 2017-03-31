@@ -1,6 +1,48 @@
+body {
+    width: 1080px;
+    margin: auto;
+}
+
+/*header*/
+figure{
+    width: 700px;
+    float: left;
+    display: inline;
+    margin-bottom: -5px;
+}
+
+figure h1 {
+    margin-top: 60px;
+    float: left;
+    color: red;
+}
+
+figure img {
+    float: left;
+    height: 170px;
+}
+
+.inlogFrom {
+    width: 200px;
+    float: right;
+    margin-top: 70px;
+}
+
+.btn {
+    color: red;
+    margin-right: 10px;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*menu*/
 nav{
     margin: auto;
-    width: 50%;
+    width: 650px;
 }
 li{
     display: inline;
@@ -20,22 +62,8 @@ a{
 .menupicborder{
     border: 1px solid black;
     margin: auto;
-    width: 50%;
+    width: 730px;
 }
 
-figure{
-    width: 300px;
-    float: left;
-}
 
-.inlogFrom {
-    width: 200px;
-    float: right;
-    margin-top: 10px;
-}
-
-.btn {
-    color: red;
-    margin-right: 10px;
-}
 
