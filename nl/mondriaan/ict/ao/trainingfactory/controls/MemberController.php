@@ -15,9 +15,7 @@ class MemberController extends \ao\php\framework\controls\AbstractController
   
     public function defaultAction()
     {
-//       $gebruiker = $this->model->getGebruiker();
-//        $this->view->set('gebruiker',$gebruiker);
-//        $contacten = $this->model->getContacten();
-//        $this->view->set('contacten', $contacten);
+       $gebruiker = $this->model->getGebruiker();
+       $this->view->set('gebruiker',$gebruiker);
     }
 }
