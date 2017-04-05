@@ -29,4 +29,21 @@ class BezoekerModel extends \ao\php\framework\models\AbstractModel
         return REQUEST_FAILURE_DATA_INCOMPLETE;
     }
     
+    public function getLessen()
+    {
+       $sql = 'SELECT * FROM `lesson`';
+       $stmnt = $this->dbh->prepare($sql);
+       $stmnt->execute();
+       $lessen = $stmnt->fetchAll(\PDO::FETCH_CLASS,__NAMESPACE__.'\db\Lesson');    
+       return $lessen;
+    }
+    
+    public function getTraining()
+    {
+       $sql = 'SELECT * FROM `training`';
+       $stmnt = $this->dbh->prepare($sql);
+       $stmnt->execute();
+       $training = $stmnt->fetchAll(\PDO::FETCH_CLASS,__NAMESPACE__.'\db\Training');    
+       return $training;
+    }
 }

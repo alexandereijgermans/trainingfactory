@@ -4,7 +4,7 @@
             <a href="?control=bezoeker&action=default">Home</a>
         </li>
         <li>
-            <a href="">Trainings Aanbod</a>
+            <a href="?control=bezoeker&action=aanbod">Trainings Aanbod</a>
         </li>
         <li>
             <a href="">Lid Worden</a>
