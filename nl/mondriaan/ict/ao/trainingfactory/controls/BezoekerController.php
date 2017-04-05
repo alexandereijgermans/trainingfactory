@@ -19,6 +19,12 @@ class BezoekerController extends \ao\php\framework\controls\AbstractController
         $this->login();
     }
 
+    public function uitloggenAction()
+    {
+        $this->model->uitloggen();
+        $this->forward('default','bezoeker');
+    }
+
     private function login(){
         if($this->model->isPostLeeg())
         {

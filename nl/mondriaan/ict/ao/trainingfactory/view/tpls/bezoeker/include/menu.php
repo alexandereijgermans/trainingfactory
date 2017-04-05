@@ -7,7 +7,7 @@
             <a href="?control=bezoeker&action=aanbod">Trainings Aanbod</a>
         </li>
         <li>
-            <a href="">Lid Worden</a>
+            <a href="#">Lid Worden</a>
         </li>
         <li>
             <a href="?control=bezoeker&action=gedragsregels">Gedragsregels</a>

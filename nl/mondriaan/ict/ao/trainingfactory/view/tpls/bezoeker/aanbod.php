@@ -1,7 +1,7 @@
 <?php include 'include/header.php';
 include 'include/menu.php';?>
 <article class="aanbod">
-    <h3>Trainings Aanbod</h3>
+    <b class="top">Trainings Aanbod</b><br/><br/>
     <table class="lesaanbod">
         <b>Er zijn <?= count($training);?> soorten trainingen.</b><br/><br/>
         <tr>
