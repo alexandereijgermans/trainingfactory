@@ -77,6 +77,7 @@ a{
     margin-right: 50px;
 }
 
+/*lesaanbod*/
 .aanbod{
     margin-left: 50px;
     margin-right: 50px;
@@ -84,4 +85,22 @@ a{
 
 .lesaanbod{
     border: 1px solid black;
+}
+
+/*home*/
+.texthome{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.top{
+    color: red;
+}
+
+/*footer*/
+footer {
+    background-color: #333;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
 }

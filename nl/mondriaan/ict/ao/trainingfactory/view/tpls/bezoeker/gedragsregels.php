@@ -2,7 +2,7 @@
 include 'include/menu.php'; ?>
     <div class="gedragsregels">
         <p>
-        <b>Gedrags regels</b>
+        <b  class="top">Gedrags regels</b>
         </p>
 
         <div>
