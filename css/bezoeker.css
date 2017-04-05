@@ -1,0 +1,87 @@
+body {
+    width: 1080px;
+    margin: auto;
+}
+
+/*header*/
+figure{
+    width: 700px;
+    float: left;
+    display: inline;
+    margin-bottom: -5px;
+}
+
+figure h1 {
+    margin-top: 60px;
+    float: left;
+    color: red;
+}
+
+figure img {
+    float: left;
+    height: 170px;
+}
+
+.inlogFrom {
+    width: 200px;
+    float: right;
+    margin-top: 70px;
+}
+
+.btn {
+    color: red;
+    margin-right: 10px;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*menu*/
+nav{
+    margin: auto;
+    width: 650px;
+}
+li{
+    display: inline;
+    margin-right: 20px;
+}
+
+a{
+    color: red;
+}
+
+.menupic{
+    margin: 20px;
+    width: 200px
+}
+
+.menupicborder{
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 730px;
+}
+
+
+/*contact*/
+.contact {
+    margin-left: 50px;
+}
+
+/*gedragsregels*/
+.gedragsregels {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.aanbod{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.lesaanbod{
+    border: 1px solid black;
+}
