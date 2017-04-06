@@ -6,6 +6,7 @@ class Person
 
     private $loginname;
     private $password;
+    private $firstname;
     private $preprovision;
     private $lastname;
     private $dateofbirth;
@@ -36,6 +37,10 @@ class Person
     public function getPassword() {
         return $this->password;
     }
+
+    public function getFirstname() {
+        return $this->firstname;
+    }
    
     public function getPreprovision() {
         return $this->preprovision;
@@ -44,7 +49,7 @@ class Person
     public function getLastname() {
         return $this->lastname;
     }
-    
+
     public function getDateofbirth() {
         return $this->dateofbirth;
     }
@@ -81,4 +86,7 @@ class Person
         return $this->role;
     }
 
+    public function getName() {
+        return "$this->firstname $this->preprovision $this->lastname";
+    }
 }

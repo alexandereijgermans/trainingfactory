@@ -7,17 +7,11 @@
 class BezoekerController extends \ao\php\framework\controls\AbstractController
 {   
     public function defaultAction()
-    {
-        $this->login();
-    }
+    {}
 
-    public function contactAction() {
-        $this->login();
-    }
+    public function contactAction() {}
 
-    public function gedragsregelsAction() {
-        $this->login();
-    }
+    public function gedragsregelsAction() {}
 
     public function uitloggenAction()
     {
@@ -25,7 +19,7 @@ class BezoekerController extends \ao\php\framework\controls\AbstractController
         $this->forward('default','bezoeker');
     }
 
-    private function login(){
+    public function inloggenAction(){
         if($this->model->isPostLeeg())
         {
             $this->view->set("boodschap","Vul uw gegevens in");
@@ -42,7 +36,7 @@ class BezoekerController extends \ao\php\framework\controls\AbstractController
                     break;
                 case REQUEST_FAILURE_DATA_INVALID:
                     $this->view->set("boodschap","Gegevens kloppen niet. Probeer opnieuw.");
-
+                    $this->forward("default", "bezoeker");
                     break;
                 case REQUEST_FAILURE_DATA_INCOMPLETE:
                     $this->forward("default", "bezoeker");

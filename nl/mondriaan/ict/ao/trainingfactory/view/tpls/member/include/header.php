@@ -14,4 +14,5 @@
     <a href="?control=member&action=uitloggen" class="uitloggen btn"><button>uitloggen</button></a>
 </header>
 <div class="clearfix"></div>
+<center><?=isset($boodschap)?"<p id = 'boodschap'><em>$boodschap</em></p>":""?></center>
 <hr>
