@@ -4,13 +4,13 @@
             <a href="?control=member&action=default">Home</a>
         </li>
         <li>
-            <a href="#">Inschrijven op lessen</a>
+            <a href="?control=member&action=lesseninschrijven">Inschrijven op lessen</a>
         </li>
         <li>
             <a href="#">Overzicht Inschrijven</a>
         </li>
         <li>
-            <a href="#">Gegevens lid wijzigen</a>
+            <a href="?control=member&action=userinfo&id=<?= $gebruiker->getId();?>">Gegevens lid wijzigen</a>
         </li>
     </ul>
 </nav>

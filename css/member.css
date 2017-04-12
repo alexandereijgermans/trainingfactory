@@ -39,6 +39,12 @@ figure img {
     display: table;
 }
 
+.naam {
+    float: right;
+    width: 220px;
+    margin-top: 50px;
+}
+
 /*menu*/
 nav{
     margin: auto;
