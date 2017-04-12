@@ -15,3 +15,4 @@
 </header>
 <div class="clearfix"></div>
 <hr>
+<center><?=isset($boodschap)?"<p id = 'boodschap'><em>$boodschap</em></p>":""?></center>

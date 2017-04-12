@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Training Factory</title>
-    <link rel="STYLESHEET" href="css/member.css" type="text/css">
+    <link rel="STYLESHEET" href="css/admin.css" type="text/css">
 </head>
 <body>
 <header>
@@ -11,7 +11,9 @@
         <img src="img/logo.png" alt="logo">
         <h1> Training Centrum <br> Den Haag</h1>
     </figure>
-    <a href="?control=instructor&action=uitloggen" class="uitloggen btn"><button>uitloggen</button></a>
+    <p class="naam top">Welkom <?=$gebruiker->getName();?> <br>
+    - <?= $gebruiker->getRole();?> -</p>
+    <a href="?control=admin&action=uitloggen" class="uitloggen btn"><button>uitloggen</button></a>
 </header>
 <div class="clearfix"></div>
 <hr>

@@ -6,6 +6,7 @@ class Training
     private $description;
     private $duration;
     private $extra_costs;
+    private $deleted;
     
     public function __construct()
     {
@@ -30,5 +31,9 @@ class Training
     public function getExtraCosts()
     {
         return $this->extra_costs;
+    }
+
+    public function getDeleted() {
+        return $this->deleted;
     }
 }

@@ -11,7 +11,7 @@
                 <img src="img/logo.png" alt="logo">
                 <h1> Training Centrum <br> Den Haag</h1>
             </figure>
-            <form class="inlogFrom" method="post" autocomplete="off">
+            <form class="inlogFrom" method="post" action="?action=inloggen" autocomplete="off">
                     <table>    
                         <tr>
                             <td>
@@ -33,3 +33,5 @@
         </header>
         <div class="clearfix"></div>
         <hr>
+        <center><?=isset($boodschap)?"<p id = 'boodschap'><em>$boodschap</em></p>":""?></center>
+
