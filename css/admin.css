@@ -110,3 +110,8 @@ h3 {
 .table td{
     border: solid black 1px;
 }
+
+.userinfo{
+    margin-left: 50px;
+    margin-right: 50px;
+}
