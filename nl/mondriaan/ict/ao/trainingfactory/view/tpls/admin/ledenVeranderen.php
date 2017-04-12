@@ -95,9 +95,10 @@ include 'include/menu.php';?>
             </tr>
             <tr>
                 <td><input type="submit" value="Opslaan"></td>
-                <td><a href="?control=admin&action=instructors"><input type="button" value="Terug"></a></td>
+                <td><a href="?control=admin&action=leden"><input type="button" value="Terug"></a></td>
             </tr>
         </table>
+        <?php if(!empty($data)):?>
         <table class="table">
             <tr class="top">
                 <td>Datum</td>
@@ -120,6 +121,7 @@ include 'include/menu.php';?>
                 <td><input type="checkbox" <?php if($data->payment == '1'):?> checked <?php endif;?>></td>
             </tr>
         </table>
+    <?php endif;?>
     </form>
 
 <?php include 'include/footer.php';

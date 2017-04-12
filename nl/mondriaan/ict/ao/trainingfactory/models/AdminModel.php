@@ -67,6 +67,7 @@ class AdminModel extends \ao\php\framework\models\AbstractModel
 
     public function getData() {
         $id = filter_input(INPUT_GET, 'id');
+        $id = intval($id);
 //        $sql = "SELECT `lesson`.date, `lesson`.time, `lesson`.location, `training`.description, `training`. extra_costs, `registration`.payment".
 //            "FROM `registration`".
 //            "JOIN `person` ON `registration`.person_id = `person`.id".
@@ -88,7 +89,12 @@ class AdminModel extends \ao\php\framework\models\AbstractModel
             return REQUEST_FAILURE_DATA_INVALID;
         }
         $data = $stmnt->fetchAll(\PDO::FETCH_CLASS, __NAMESPACE__.'\db\Registration');
-        return $data[0];
+        if(empty($data)) {
+            return $data;
+        } else {
+            return $data[0];
+        }
+
     }
 
     public function veranderPerson() {
