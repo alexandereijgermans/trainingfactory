@@ -53,7 +53,6 @@ class AdminController extends \ao\php\framework\controls\AbstractController
         $this->view->set('gebruiker',$gebruiker);
         $data = $this->model->getData();
         $this->view->set('data', $data);
-        var_dump($data);
     }
 
     public function deleteLidAction() {
