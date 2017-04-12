@@ -5,25 +5,19 @@ include 'include/menu.php';?>
         <table>
             <caption><i>met een * verplicht om in te vuller</i></caption>
             <tr>
-                <td>
-                    <p>Omschrijving *</p>
-                </td>
+                <td>Omschrijving *</td>
                 <td>
                     <input type="text" name="description" placeholder="Trainen">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p>tijdsduur * <br><i>in minuten</i></p>
-                </td>
+                <td>tijdsduur * <br><i>in minuten</i></td>
                 <td>
                     <input type="text" name="duration" placeholder="60">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p>extra kosten <br><i>in euro's</i></p>
-                </td>
+                <td>extra kosten <br><i>in euro's</i></td>
                 <td>
                     <input type="text" name="extra_costs" placeholder="5">
                 </td>

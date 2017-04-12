@@ -2,9 +2,9 @@
 include 'include/header.php';
 include 'include/menu.php';?>
 <section>
-    <form method="post">
+    <form method="post" class="registreren">
         <table>
-            <caption>Toevoegen van een nieuwe deelnemer</caption>
+            <p class="top"><b>Toevoegen van een nieuwe deelnemer</b></p>
             <tr>
                 <td>Voornaam:*</td>
                 <td>

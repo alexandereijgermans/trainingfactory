@@ -6,7 +6,7 @@ include 'include/menu.php';?>
             <caption><i>met een * verplicht om in te vuller</i></caption>
             <tr>
                 <td>
-                    <p>Omschrijving *</p>
+                    Omschrijving *
                 </td>
                 <td>
                     <input type="text" name="description" placeholder="Trainen" value="<?= $training->getDescription()?>">
@@ -14,7 +14,7 @@ include 'include/menu.php';?>
             </tr>
             <tr>
                 <td>
-                    <p>tijdsduur * <br><i>in minuten</i></p>
+                    tijdsduur * <br><i>in minuten</i>
                 </td>
                 <td>
                     <input type="text" name="duration" placeholder="60" value="<?= $training->getDuration()?>">
@@ -22,7 +22,7 @@ include 'include/menu.php';?>
             </tr>
             <tr>
                 <td>
-                    <p>extra kosten <br><i>in euro's</i></p>
+                    extra kosten <br><i>in euro's</i>
                 </td>
                 <td>
                     <input type="text" name="extra_costs" placeholder="5" value="<?= $training->getExtraCosts()?>">

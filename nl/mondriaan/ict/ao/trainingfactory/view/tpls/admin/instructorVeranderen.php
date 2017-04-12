@@ -5,41 +5,32 @@ include 'include/menu.php';?>
         <table>
             <caption><i>met een * verplicht om in te vuller</i></caption>
             <tr>
-                <td>
-                    <p>Voornaam *</p>
-                </td>
+                <td>Voornaam *</td>
                 <td>
                     <input type="text" name="firstname" placeholder="jan" value="<?= $person->getFirstname()?>">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p>tussenvoegsel</p>
-                </td>
+                <td>tussenvoegsel</td>
                 <td>
                     <input type="text" name="preprovision" value="<?= $person->getPreprovision()?>">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p>achternaam *</p>
-                </td>
+                <td>achternaam *</td>
                 <td>
                     <input type="text" name="lastname" placeholder="klaasen" value="<?= $person->getLastname()?>">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p>inlognaam *</p>
-                </td>
+                <td>inlognaam *</td>
                 <td>
                     <input type="text" name="loginname" placeholder="inlognaam" value="<?= $person->getLoginname()?>">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p>wachtwoord <br>
-                        <i>(standaard qwerty)</i></p>
+                <td>wachtwoord <br>
+                    <i>(standaard qwerty)</i>
                 </td>
                 <td>
                     <input type="password" name="password" placeholder="password" value="<?= $person->getPassword()?>">
@@ -47,64 +38,50 @@ include 'include/menu.php';?>
             </tr>
             <tr>
                 <td>
-                    <p>geboorte datum *</p>
+                    geboorte datum *
                 </td>
                 <td>
                     <input type="date" name="dateofbirth" value="<?= $person->getDateofbirth()?>">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p>geslacht *</p>
-                </td>
+                <td>geslacht *</td>
                 <td>
                     <input type="text" name="gender" placeholder="man/vrouw" value="<?= $person->getGender()?>">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p>emailadres *</p>
-                </td>
+                <td>emailadres *</td>
                 <td>
                     <input type="email" name="emailaddress" placeholder="email@example.com" value="<?= $person->getEmailaddress()?>">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p>datum aangenomen *</p>
-                </td>
+                <td>datum aangenomen *</td>
                 <td>
                     <input type="date" name="hiring_date" value="<?= $person->getHiringDate()?>">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p>salaris *</p>
-                </td>
+                <td>salaris *</td>
                 <td>
                     <input type="text" name="salary" placeholder="00.00" value="<?= $person->getSalary()?>">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p>straat & huisnummer</p>
-                </td>
+                <td>straat & huisnummer</td>
                 <td>
                     <input type="text" name="street" placeholder="sesamstraat 5" value="<?= $person->getStreet()?>">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p>postcode</p>
-                </td>
+                <td>postcode</td>
                 <td>
                     <input type="text" name="postal_code" placeholder="1234 AA" value="<?= $person->getPostalCode()?>">
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p>plaats</p>
-                </td>
+                <td>plaats</td>
                 <td>
                     <input type="text" name="place" placeholder="Amsterdam" value="<?= $person->getPlace()?>">
                 </td>
