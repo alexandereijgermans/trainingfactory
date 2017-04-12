@@ -18,6 +18,7 @@ class Person
     private $postal_code;
     private $place;
     private $role;
+    private $deleted;
 
     public function __construct()
     {
@@ -88,5 +89,9 @@ class Person
 
     public function getName() {
         return "$this->firstname $this->preprovision $this->lastname";
+    }
+
+    public function getDeleted() {
+        return $this->deleted;
     }
 }

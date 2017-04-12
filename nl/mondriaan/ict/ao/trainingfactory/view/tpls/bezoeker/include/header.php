@@ -32,5 +32,6 @@
                 </form>
         </header>
         <div class="clearfix"></div>
-        <center><?=isset($boodschap)?"<p id = 'boodschap'><em>$boodschap</em></p>":""?></center>
         <hr>
+        <center><?=isset($boodschap)?"<p id = 'boodschap'><em>$boodschap</em></p>":""?></center>
+

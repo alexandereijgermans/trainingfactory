@@ -10,7 +10,7 @@
             <a href="?control=admin&action=leden">Leden</a>
         </li>
         <li>
-            <a href="#">Trainingen</a>
+            <a href="?control=admin&action=trainingsvormen">Trainingen</a>
         </li>
     </ul>
 </nav>
