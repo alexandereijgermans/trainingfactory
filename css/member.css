@@ -76,3 +76,8 @@ footer {
     bottom: 0;
     position: fixed;
 }
+
+.overzicht {
+    margin-right: 50px;
+    margin-left: 50px;
+}

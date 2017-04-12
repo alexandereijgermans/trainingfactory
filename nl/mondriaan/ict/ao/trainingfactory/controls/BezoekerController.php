@@ -6,8 +6,7 @@
 
 class BezoekerController extends \ao\php\framework\controls\AbstractController
 {   
-    public function defaultAction()
-    {}
+    public function defaultAction(){}
 
     public function contactAction() {}
 

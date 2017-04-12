@@ -18,4 +18,13 @@ class MemberController extends \ao\php\framework\controls\AbstractController
        $gebruiker = $this->model->getGebruiker();
        $this->view->set('gebruiker',$gebruiker);
     }
+
+    public function overzichtInschrijvingenAction() {
+        $gebruiker = $this->model->getGebruiker();
+        $this->view->set('gebruiker', $gebruiker);
+        $data = $this->model->getData();
+        $this->view->set('data', $data);
+    }
+
+
 }

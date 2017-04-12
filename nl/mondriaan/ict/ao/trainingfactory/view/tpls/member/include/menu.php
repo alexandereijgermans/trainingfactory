@@ -7,7 +7,7 @@
             <a href="#">Inschrijven op lessen</a>
         </li>
         <li>
-            <a href="#">Overzicht Inschrijven</a>
+            <a href="?control=member&action=overzichtInschrijvingen&id=<?=$gebruiker->getId()?>">Overzicht inschrijvingen</a>
         </li>
         <li>
             <a href="#">Gegevens lid wijzigen</a>

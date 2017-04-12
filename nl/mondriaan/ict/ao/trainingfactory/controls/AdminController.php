@@ -42,7 +42,6 @@ class AdminController extends \ao\php\framework\controls\AbstractController
                     break;
                 case REQUEST_SUCCESS:
                     $this->view->set("boodschap", "Contact is aangepast.");
-                    $_POST = [];
                     $this->forward("leden");
                     break;
             }
