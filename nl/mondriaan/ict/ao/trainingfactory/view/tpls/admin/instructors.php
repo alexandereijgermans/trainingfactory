@@ -1,6 +1,6 @@
 <?php include 'include/header.php';
 include 'include/menu.php';?>
-    <h3>Instructeur toevoegen <a href="?control=admin&action=instructorToevoegen"><img src="img/toevoegen.png" class="toevoegen" alt="instructor toevoegen"></a></h3>
+    <h3>Overzicht Instructeurs <a href="?control=admin&action=instructorToevoegen"><img src="img/toevoegen.png" class="toevoegen" alt="instructor toevoegen"></a></h3>
     <table class="table">
         <tr class="top">
             <td>Naam</td>
@@ -12,7 +12,7 @@ include 'include/menu.php';?>
             <td>Verwijderen</td>
         </tr>
         <?php foreach ($personen as $person):?>
-            <?php if($person->getRole() === 'instructor'):?>
+            <?php if($person->getRole() === 'instructor' && $person->getDeleted() == 0):?>
                 <tr>
                     <td><?=$person->getName()?></td>
                     <td><?=$person->getEmailaddress()?></td>
