@@ -9,6 +9,7 @@ class Lesson
     private $max_persons;
     private $person_id;
     private $training_id;
+    private $description;
     
     
     public function __construct()
@@ -51,5 +52,10 @@ class Lesson
     public function getTrainingId()
     {
         return $this->training_id;
+    }
+    
+    public function getDescription()
+    {
+        return $this->description;
     }
 }

@@ -76,3 +76,14 @@ footer {
     bottom: 0;
     position: fixed;
 }
+
+/*table*/
+
+.table td{
+    border: solid black 1px;
+}
+
+.lijst {
+    height: 16px;
+    width: 16px;
+}

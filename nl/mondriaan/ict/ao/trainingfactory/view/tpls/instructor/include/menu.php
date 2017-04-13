@@ -7,7 +7,7 @@
             <a href="#">Plannen Lessen</a>
         </li>
         <li>
-            <a href="#">Lessen Beheer</a>
+            <a href="?control=instructor&action=beheer">Lessen Beheer</a>
         </li>
     </ul>
 </nav>

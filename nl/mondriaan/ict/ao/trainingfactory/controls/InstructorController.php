@@ -17,4 +17,19 @@ class InstructorController extends \ao\php\framework\controls\AbstractController
 //       $gebruiker = $this->model->getGebruiker();
 //       $this->view->set("gebruiker",$gebruiker);
     }
+    
+    public function beheerAction()
+    {
+        $lessen=$this->model->getLessen();
+        $this->view->set('lessen',$lessen);
+    }
+    
+    public function detailsAction()
+    {   
+//        $activiteit = $this->model->getActiviteit();
+//        $this->view->set('activiteit',$activiteit);
+        
+        $deelnemers = $this->model->getDeelnemers();
+        $this->view->set('deelnemers',$deelnemers);
+    }
 }
