@@ -14,14 +14,16 @@ class InstructorController extends \ao\php\framework\controls\AbstractController
  
     public function defaultAction()
     {
-//       $gebruiker = $this->model->getGebruiker();
-//       $this->view->set("gebruiker",$gebruiker);
+        $gebruiker = $this->model->getGebruiker();
+        $this->view->set('gebruiker',$gebruiker);
     }
     
     public function beheerAction()
     {
         $lessen=$this->model->getLessen();
         $this->view->set('lessen',$lessen);
+        $gebruiker = $this->model->getGebruiker();
+        $this->view->set('gebruiker',$gebruiker);
     }
     
     public function detailsAction()
@@ -32,12 +34,16 @@ class InstructorController extends \ao\php\framework\controls\AbstractController
         $this->view->set('personen',$personen);
         $deelnemers = $this->model->getDeelnemers();
         $this->view->set('deelnemers',$deelnemers);
+        $gebruiker = $this->model->getGebruiker();
+        $this->view->set('gebruiker',$gebruiker);
     }
     
     public function lesPlannenAction()
     {
         $trainingen = $this->model->getTrainingen();
         $this->view->set('trainingen', $trainingen);
+        $gebruiker = $this->model->getGebruiker();
+        $this->view->set('gebruiker',$gebruiker);
         if($this->model->isPostLeeg())
         {
            $this->view->set("boodschap","Vul uw gegevens in");

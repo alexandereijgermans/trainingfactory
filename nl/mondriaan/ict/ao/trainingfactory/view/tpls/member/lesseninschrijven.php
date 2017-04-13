@@ -30,7 +30,7 @@ include 'include/menu.php';?>
                </td>
                
                <td>
-                   <?= $l->description;?>
+                   <?= $l->getDescription();?>
                </td>
                
                <td>
