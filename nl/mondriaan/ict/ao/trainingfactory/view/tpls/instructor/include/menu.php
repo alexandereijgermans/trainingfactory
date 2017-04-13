@@ -4,7 +4,7 @@
             <a href="?control=instructor&action=default">Home</a>
         </li>
         <li>
-            <a href="#">Plannen Lessen</a>
+            <a href="?control=instructor&action=lesPlannen">Lessen plannen</a>
         </li>
         <li>
             <a href="?control=instructor&action=beheer">Lessen Beheer</a>

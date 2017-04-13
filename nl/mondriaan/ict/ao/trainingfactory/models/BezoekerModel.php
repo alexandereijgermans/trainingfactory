@@ -40,7 +40,7 @@ class BezoekerModel extends \ao\php\framework\models\AbstractModel
     
     public function getTraining()
     {
-       $sql = 'SELECT * FROM `training`';
+       $sql = 'SELECT * FROM `training` WHERE deleted = 0';
        $stmnt = $this->dbh->prepare($sql);
        $stmnt->execute();
        $training = $stmnt->fetchAll(\PDO::FETCH_CLASS,__NAMESPACE__.'\db\Training');    
