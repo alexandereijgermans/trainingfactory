@@ -6,6 +6,8 @@ class Registration
     public $payment;
     private $person_id;
     private $lesson_id;
+    private $firstName;
+    private $street;
     
     public function __construct()
     {
@@ -29,5 +31,13 @@ class Registration
 
     public function getLessonId() {
         return $this->lesson_id;
+    }
+    
+    public function getFirstName(){
+        return $this->firstName;
+    }
+    
+    public function getStreet(){
+        return $this->street;
     }
 }
