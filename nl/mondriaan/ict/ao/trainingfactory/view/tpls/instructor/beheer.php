@@ -1,13 +1,14 @@
 <?php include 'include/header.php';
 include 'include/menu.php';?>
-<h3>overzicht members</h3>
+<div class="lalalal">
+<h3 class="top">overzicht members</h3>
 <table class="table">
     <tr class="top">
         <td>Datum</td>
         <td>Tijd</td>
         <td>Lokaal</td>
         <td>Sport</td>
-        <td>Aantal ingeschreven deelnemers</td>
+        <td>Max aantal deelnemers</td>
         <td>Deelnemerslijst</td>
         <td>Aanpassen</td>
     </tr >
@@ -18,10 +19,11 @@ include 'include/menu.php';?>
                 <td><?=$lesson->getLocation()?></td>                
                 <td><?=$lesson->getDescription()?></td>
                 <td><?=$lesson->getMaxPersons()?></td>
-
+           
                 <td><a href="?control=instructor&action=details&id=<?= $lesson->getId()?>"><img src="img/details.png" alt="lijst" class="lijst"></a></td>
-                <td><img src="img/bewerk.png" alt="aanpassen"></td>
+                <td><a href="?control=instructor&action=lesAanpassen&id=<?= $lesson->getId()?>"><img src="img/bewerk.png" alt="lijst" class="lijst"></a></td>
             </tr>
     <?php endforeach;?>
 </table>
+</div>
 <?php include 'include/footer.php';

@@ -26,9 +26,10 @@ class InstructorController extends \ao\php\framework\controls\AbstractController
     
     public function detailsAction()
     {   
-//        $activiteit = $this->model->getActiviteit();
-//        $this->view->set('activiteit',$activiteit);
-        
+        $les=$this->model->getLes();
+        $this->view->set('les',$les);
+        $personen=$this->model->getPersonen();
+        $this->view->set('personen',$personen);
         $deelnemers = $this->model->getDeelnemers();
         $this->view->set('deelnemers',$deelnemers);
     }
@@ -61,5 +62,35 @@ class InstructorController extends \ao\php\framework\controls\AbstractController
                      break;
             }
         }    
+    }
+    
+    public function lesAanpassenAction()
+    {
+        if($this->model->isPostLeeg()) {
+            $this->view->set("boogschap", "pas de gegevens het lid aan.");
+        } else {
+            $result= $this->model->lesAanpassen();
+            switch($result) {
+                case REQUEST_FAILURE_DATA_INCOMPLETE:
+                    $this->view->set("boodschap", "les is niet aangepast. Niet alle vereiste data ingevuld.");
+                    $this->view->set('form_data', $_POST);
+                    break;
+                case REQUEST_FAILURE_DATA_INVALID:
+                    $this->view->set("boodschap", "les is niet aangepast. Er is foutieve data ingestuurd .");
+                    $this->view->set('form_data',$_POST);
+                    break;
+                case REQUEST_SUCCESS:
+                    $this->view->set("boodschap", "les is aangepast.");
+                    $_POST = [];
+                    $this->forward("beheer");
+                    break;
+            }
+        }
+        $les = $this->model->getLes();
+        $this->view->set('les', $les);
+        $gebruiker = $this->model->getGebruiker();
+        $this->view->set('gebruiker',$gebruiker);
+        $trainingen = $this->model->getTrainingen();
+        $this->view->set('trainingen', $trainingen);
     }
 }
