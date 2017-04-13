@@ -11,6 +11,8 @@
         <img src="img/logo.png" alt="logo">
         <h1> Training Centrum <br> Den Haag</h1>
     </figure>
+    <p class="naam top">Welkom <?=$gebruiker->getName();?> <br>
+    - <?= $gebruiker->getRole();?> -</p>
     <a href="?control=instructor&action=uitloggen" class="uitloggen btn"><button>uitloggen</button></a>
 </header>
 <div class="clearfix"></div>

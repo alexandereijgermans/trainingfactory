@@ -25,5 +25,5 @@ include 'include/menu.php';?>
                 </tr>
             <?php endif;?>
         <?php endforeach;?>
-    </table>
+    </table><br/>
 <?php include 'include/footer.php';

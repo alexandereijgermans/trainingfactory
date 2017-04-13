@@ -43,5 +43,5 @@ include 'include/menu.php';?>
            </tr>
        <?php endforeach;?>
        </tbody>
-   </table>
+   </table><br/>
 <?php include 'include/footer.php';

@@ -29,5 +29,5 @@ include 'include/menu.php';?>
     <?php else:?>
         <h3 class="top">U heeft zich nog niet ingeschreven voor lessen</h3>
     <?php endif;?>
- </div>
+ </div><br/>
 <?php include 'include/footer.php';
